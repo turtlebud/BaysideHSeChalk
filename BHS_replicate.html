@@ -1,539 +1,476 @@
 <html>
-
 <head>
-	<title>Bayside High School Replication Site</title>
+<title>Bayside High School Replication Site</title>
 </head>
-
 <body>
-
 <style type="text/css">
-
-	/*header formatting*/
-
-	#header{
-	width:100%;
-	padding:10px;
-	}
-
-
-	#quickLinks{
-	background-color: DarkOrange;
-	width:100%;
-	color: white;
-	padding-top:1px;
-	height: 20px;
-	border-bottom: 1px dotted white;
-	}
-
-	#quicklinks a{
-	color: black;
-	font-family: verdana;
-	font-size: 9px;
-	text-decoration: none;
-	}
-
-	#quicklinks form{
-	text-indent:10px;
-	font-size: 9px;
-	padding-top: 4px;
-	}
-
-	#logo{
-	width:100%;
-	}
-
-	#logo img{
-	width: 100%;
-	}
-
-	#navigation{
-	background-color: #003366;
-	}
-
-	#navigation a{
-	width: 11.18%;
-	color: white;
-	padding: 3px;
-	padding-left:3.7px;
-	display: inline-block;
-	text-decoration: none;
-	border-left: 1px solid white;
-	}
-
-	#navigation a:hover{
-	background-color:orange;
-	color: MidnightBlue;
-	text-decoration: none;
-	}
-	#login{
-	background-color: Gainsboro;
-	width:100%;
-	}
-
-	#log{
-	color:DimGrey;
-	font-size:14px;
-	font-weight:bold;
-	}
-
-	#login form{
-	padding: 10px;
-	}
-
-	#need{
-	font-size:11px;
-	}
-	
-	#login a{
-	font-size:10px;
-	color:DarkOrange;
-	}
-
-	/*main formatting*/
-
-	#main{
-	height: 3000px;
-	padding:10px;
-	}
-
-	#Announcements{
-	float: left;
-	width:70%;
-	height:2500;
-	margin:10px;
-	}
-
-	#newspaper{
-	float:left;
-	padding:5px;
-	width:65px;
-	height:50px;
-	}
-
-	#Announcements a{
-	color:DarkOrange;
-	}
-
-	#beaker{
-	float:left;
-	}
-
-	#SocialLinks{
-	font-family:calibri;
-	border: 1px solid DarkOrange;
-	float: right;
-	padding:9px;
-	width:25.5%;
-	height: 200px;
-	}
-
-	#FBTW{
-	float:left;
-	padding:4px;
-	height:25px;
-	width:55px;
-	}
-
-	#web{
-	color:DarkOrange;
-	font-size:18px;
-	}
-
-	#SocialLinks span{
-	color:DarkOrange;
-	font-size:18px;
-	}
-
-	#idioma{
-	color:DarkOrange;
-	}
-
-	#Events{
-	background-color:#FFE680;
-	font-family:calibri;
-	font-size:13;
-	float: right;
-	width:25.5%;
-	padding:10px;
-	}
-
-	#c{
-	height:50;
-	width:100;
-	float:left;
-	}
-
-	#jersey{
-	height:50;
-	width:100;
-	float:left;
-	}
-
-	#pep{
-	height:80;
-	width:74;
-	float:left;
-	}
-
-	#pjs{
-	height:110;
-	width:60;
-	float:left;
-	}
-
-	#twin{
-	height:80;
-	width:75;
-	float:left;
-	}
-
-	#para{
-	border-style:solid;
-	border-width:1px;
-	padding:6px;
-	}
-
-	#Events span{
-	font-size: 11px;
-	}
-
-	#Events a{
-	color:black;
-	}
-
-	#links{
-	background-color:#FFE680;
-	font-family:calibri;
-	font-size:14;
-	float: right;
-	width:25.5%;
-	padding:10px;
-	}
-
-	#links a{
-	color:DarkOrange;
-	}
-
-	#psal{
-	height:30;
-	width:80;
-	float:right;
-	padding:4px;
-	}
-
-	#music{
-	height:80;
-	width:30;
-	float:left;
-	padding:4px;
-	}
-
-	#alumni{
-	height:80;
-	width:75;
-	float:left;
-	padding:4px;
-	}
-
-
-	#publication{
-	font-family:calibri;
-	border: 1px solid DarkOrange;
-	float: right;
-	padding:9px;
-	width:25.5%;
-	height: 230px;
-	}
-
-	#weather{
-	background-color: grey;
-	width: 30%;
-	float: right;
-	height: 50px;
-	}
-
-	/*footer formatting*/
-
-	#footer{
-	width:100%;
-	padding:10px;
-	}
-
-	#footer a{
-	color:DarkOrange;
-	}
-
-	#address{
-	float:left;
-	font-family:calibri;
-	font-size:11px;
-	padding:7px;
-	background-color: WhiteSmoke;
-	width:69%;
-	}
-
-	#companyLinks{
-	float:right;
-	text-align:right;
-	background-color: WhiteSmoke;
-	font-family:calibri;
-	font-size:11px;
-	width:28%;
-	padding:7px;
-	height:39px;
-	}
-
-	#companyLogo{
-	width:100%;
-	float:right;
-	text-align:right;
-	}
-
-	#Language{
-	width:100%;
-	}
-
+/*header formatting*/
+#header{
+width:100%;
+padding:10px;
+}
+#quickLinks{
+background-color: DarkOrange;
+width:100%;
+color: white;
+padding-top:1px;
+height: 20px;
+border-bottom: 1px dotted white;
+}
+#quicklinks a{
+color: black;
+font-family: verdana;
+font-size: 9px;
+text-decoration: none;
+}
+#quicklinks form{
+text-indent:10px;
+font-size: 9px;
+padding-top: 4px;
+}
+#logo{
+width:100%;
+}
+#logo img{
+width: 100%;
+}
+#navigation{
+background-color: #003366;
+}
+#navigation a{
+width: 11.18%;
+color: white;
+padding: 3px;
+padding-left:3.7px;
+display: inline-block;
+text-decoration: none;
+border-left: 1px solid white;
+}
+#navigation a:hover{
+background-color:orange;
+color: MidnightBlue;
+text-decoration: none;
+}
+#login{
+background-color: Gainsboro;
+width:100%;
+}
+#log{
+color:DimGrey;
+font-size:14px;
+font-weight:bold;
+}
+#login form{
+padding: 10px;
+}
+#need{
+font-size:11px;
+}
+#login a{
+font-size:10px;
+color:DarkOrange;
+}
+/*main formatting*/
+#main{
+height: 3000px;
+padding:10px;
+}
+#Announcements{
+float: left;
+width:70%;
+height:2800;
+margin:10px;
+}
+#newspaper{
+float:left;
+padding:5px;
+width:65px;
+height:50px;
+}
+#Announcements a{
+color:DarkOrange;
+}
+#beaker{
+float:left;
+}
+#SocialLinks{
+font-family:calibri;
+border: 1px solid DarkOrange;
+float: right;
+padding:9px;
+width:25.5%;
+height: 200px;
+}
+#FBTW{
+float:left;
+padding:4px;
+height:25px;
+width:55px;
+}
+#web{
+color:DarkOrange;
+font-size:18px;
+}
+#SocialLinks span{
+color:DarkOrange;
+font-size:18px;
+}
+#idioma{
+color:DarkOrange;
+}
+#Events{
+background-color:#FFE680;
+font-family:calibri;
+font-size:13;
+float: right;
+width:25.5%;
+padding:10px;
+}
+#c{
+height:50;
+width:100;
+float:left;
+}
+#jersey{
+height:50;
+width:100;
+float:left;
+}
+#pep{
+height:80;
+width:74;
+float:left;
+}
+#pjs{
+height:110;
+width:60;
+float:left;
+}
+#twin{
+height:80;
+width:75;
+float:left;
+}
+#para{
+border-style:solid;
+border-width:1px;
+padding:6px;
+}
+#Events span{
+font-size: 11px;
+}
+#Events a{
+color:black;
+}
+#links{
+background-color:#FFE680;
+font-family:calibri;
+font-size:14;
+float: right;
+width:25.5%;
+padding:10px;
+}
+#links a{
+color:DarkOrange;
+}
+#psal{
+height:30;
+width:80;
+float:right;
+padding:4px;
+}
+#music{
+height:80;
+width:30;
+float:left;
+padding:4px;
+}
+#alumni{
+height:80;
+width:75;
+float:left;
+padding:4px;
+}
+#publication{
+font-family:calibri;
+font-size:14px;
+border: 1px solid DarkOrange;
+float: right;
+padding:9px;
+width:25.5%;
+}
+#publication a{
+color:DarkOrange;
+}
+#publication span{
+font-size:17px;
+font-weight:bold;
+border-bottom: 1px dotted black;
+}
+#newsTitle{
+height:50;
+width:240;
+float:right;
+padding:4px;
+}
+#magazine{
+height:85;
+width:65;
+float:left;
+padding:5px;
+}
+#weather{
+background-color:#FFE680;
+font-family:calibri;
+font-size:13;
+float: right;
+width:25.5%;
+padding:10px;
+}
+#hot{
+color:red;
+font-weight:bold;
+}
+#cold{
+color:RoyalBlue;
+font-weight:bold;
+}
+/*footer formatting*/
+#footer{
+width:100%;
+padding:10px;
+}
+#footer a{
+color:DarkOrange;
+}
+#address{
+float:left;
+font-family:calibri;
+font-size:11px;
+padding:7px;
+background-color: WhiteSmoke;
+width:69%;
+}
+#companyLinks{
+float:right;
+text-align:right;
+background-color: WhiteSmoke;
+font-family:calibri;
+font-size:11px;
+width:28%;
+padding:7px;
+height:39px;
+}
+#companyLogo{
+width:100%;
+float:right;
+text-align:right;
+}
+#Language{
+width:100%;
+}
 </style>
-
 <!-- header -->
-
 <div id="header">
-	<div id="quickLinks">
-		<form>
-			>&nbsp;&nbsp;<a href="">School Home</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href="">Login</a>&nbsp;&nbsp;
-			>&nbsp;&nbsp;<a href="">Help</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href="">Search</a>
-		</form>
-	</div>
-	
-	<div id="logo">
-		<img src="BHS_replicate_images/HS495_CONTEMPORARY_02.jpg">
-	</div>
-
-	<div id="navigation">
-		<a href="">Directory</a>
-		<a href="">About BHS</a>
-		<a href="">Calender</a>
-		<a href="">Academics</a>
-		<a href="">Students</a>
-		<a href="">Parents</a>
-		<a href="">Library</a>
-		<a href="">Guidance</a>
-	</div>
-
-	<div id="login">
-		<form>
-			&nbsp;&nbsp;<span id="log">LOGIN</span>&nbsp;&nbsp;&nbsp;&nbsp;
-
-			<span id="need">Username:</span>&nbsp;&nbsp;&nbsp;<input type="text" id="username">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-			<span id="need">Password:</span>&nbsp;&nbsp;&nbsp;<input type="password" id="pw">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<input type="submit" value="Login">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="">Forgot Password?</a>&nbsp;&nbsp;&nbsp;&nbsp;
-
-			<span id="need">Need Help?</span>&nbsp;&nbsp;<a href="">English</a> | <a href="">Español</a>
-		</form>
-	</div>
+<div id="quickLinks">
+<form>
+>&nbsp;&nbsp;<a href="">School Home</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href="">Login</a>&nbsp;&nbsp;
+>&nbsp;&nbsp;<a href="">Help</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href="">Search</a>
+</form>
 </div>
-
+<div id="logo">
+<img src="BHS_replicate_images/HS495_CONTEMPORARY_02.jpg">
+</div>
+<div id="navigation">
+<a href="">Directory</a>
+<a href="">About BHS</a>
+<a href="">Calender</a>
+<a href="">Academics</a>
+<a href="">Students</a>
+<a href="">Parents</a>
+<a href="">Library</a>
+<a href="">Guidance</a>
+</div>
+<div id="login">
+<form>
+&nbsp;&nbsp;<span id="log">LOGIN</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span id="need">Username:</span>&nbsp;&nbsp;&nbsp;<input type="text" id="username">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span id="need">Password:</span>&nbsp;&nbsp;&nbsp;<input type="password" id="pw">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="submit" value="Login">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="">Forgot Password?</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<span id="need">Need Help?</span>&nbsp;&nbsp;<a href="">English</a> | <a href="">Español</a>
+</form>
+</div>
+</div>
 <!-- Main -->
-
 <div id="main">
-	<div id="Announcements">
-		<b>Daily Announcements</b></br>
+<div id="Announcements">
+<b>Daily Announcements</b></br>
+<p><b>eChalk Update</b> - All student accounts have been created and all classes have been uploaded. Students: your user name is your firstname.lastname and your password is your 9 digit OSIS#. If you have any questions, please email <a href="">smiller@baysidehighschool.org</a></p>
+<p><b>Pupil Path Update</b> - Incoming students will receive a letter containing their pupil path user names and passwords during their guidance counselor appointment. Parent information (user names and passwords) are also on this letter.</p>
+<hr>
+<p><img src="BHS_replicate_images/newspaper.png" id="newspaper">The 1st meeting for our school newspaper (The Baysider) will be on September 23rd, during period 11, in room B6. We are looking for writers, photographers, and artists. All are welcome!</p>
+<hr>
+<b><u><i>WELCOME BACK! FALL 2014 INFORMATION</i></u></b></br>
+Please visit <a href="">www.pupilpath.com</a> for Summer Course & Regents grades, listed under 2013-2014, Term 7.</br></br>
+Please download a copy of our <a href="">new bell schedule for the 2014-15 school year!</a>
+<hr>
+<p><img src="BHS_replicate_images/beaker.gif" id="beaker"><a href="">AP Chemistry Summer Assignment</a> - due the first day of school</p></br></br></br></br></br>
+<hr>
+<span style="font-size:24px"><b>PROSPECTIVE STUDENTS</b></span></br>
+There will be 2 open house dates in the fall for the 2015-2016 school year:</br></br>
+Tuesday, October 21, 2014</br>
+Auditorium doors will open at 6:30 pm and Information Session will begin promptly at 7 pm</br>
+Thursday, November 6, 2014</br>
+Auditorium doors will open at 6:30 pm and Information Session will begin promptly at 7 pm
+<p>Specialized programs:</br>
+Q12A - <a href="">Digital Art & Design</a></br>
+12B - <a href="">Music: Performance & Production</a></br>
+Q12C - <a href="">Environmental Engineering & Technology</a></br>
+Q12D - <a href="">Humanities & Non-Profit Management</a></br>
+Q12E - <a href="">Computer Programming & Web Design</a></br>
+Q12G - <a href="">Sports Medicine & Management</a></br>
+</p>
+<h4><a href="">FAQs for Students applying for 2015-2016 school year</a></h4>
+Audition Information 2014-2015</br>
+Attention current 7th Graders:</br>
+As you begin your high school search process, here are some important dates to remember for the Bayside High School Digital Art & Music: Performance & Production Auditions -
+<ul>
+<li>Sunday, November 2, 2014 - 9:30 AM</li>
+<li>Saturday, November 15, 2014 - 2:00 PM</li>
+<li>Sunday, November 16, 2014 - 9:30 AM</li>
+<li>Saturday, January 10, 2015 - 9:30 AM</li>
+</ul>
+Plan on arriving 1/2 hour before the scheduled audition time.</br>
+You do not need a ticket or an appointment.</br>
+<hr>
+PTA SAT Prep Course for Fall 2014</br>
+<a href="">Monday/Wednesday Classes</a> after 9th Period start September 22, 2014</br>
+<a href="">Saturday Morning Classes</a> start September 20, 2014
+</div>
+<div id="SocialLinks">
+<p><img src="BHS_replicate_images/facebook_twitter_logo.jpg" id="FBTW">
+LIKE us on <a href="" id="web">Facebook</a>
+FOLLOW us on <a href="" id="web">Twitter</a></p>
+&nbsp;<b>Instructions for logging into:</b></br>
+&nbsp;<a href="" id="web">E-Chalk</a> <span>(log in above)</span></br>
+&nbsp;<a href="" id="web">Pupil Path</a> <a href="" id="web">(pupilpath.com)</a></br>
+&nbsp;* In <a href="" id="idioma">Korean</a></br>
+&nbsp;* In <a href="" id="idioma">Chinese</a></br>
+&nbsp;* In <a href="" id="idioma">Spanish</a>
+</div>
+<div id="Events">
+<b>Upcoming Events</b></br></br>
+<span> >> </span> <b>Monday, September 29</b>
+<p id="para"><img src="BHS_replicate_images/pajamas-clipart-8.jpg" id="pjs"> &nbsp; <b>Spirit Week</b>
+</br></br></br></br></br></br></br></br>
+Comfy Cozy Day</p>
+<p id="para"><b>SUNY Maritime college visit</b></br>
+On M 9/29, SUNY Maritime will be visiting during period 7 in the Auditorium Balcony. Please stop by room 131 the day before to pick up a pass. Passes WILL NOT be distributed the day of the college visit. They will be collected at the door, and no one may enter without one. Your teacher's signature must be on the pass in order for you to be excused for that period.
+</br></br>
+Please come to room 131 if you have any questions.</p>
+<span> >> </span> <b>Tuesday, September 30</b>
+<p id="para"><img src="BHS_replicate_images/twins.jpg" id="twin"> &nbsp;<b>Spirit Week</b>
+</br></br></br></br></br></br>
+Twin Day</p>
+<span> >> </span><b>Wednesday, October 1</b>
+<p id="para"><img src="BHS_replicate_images/cartoon.jpg" id="c"> &nbsp;<b>Spirit Week</b>
+</br></br></br></br>
+Cartoon Day</p>
+<span> >> </span> <b>Thursday, October 2</b>
+<p id="para"><b>CUNY Baruch college visit</b>
+On TH 10/2, CUNY Baruch will be visiting during period 4 in the Auditorium Balcony. Please stop by room 131 the day before to pick up a pass. Passes WILL NOT be distributed the day of the college visit. They will be collected at the door, and no one may enter without one. Your teacher's signature must be on the pass in order for you to be excused for that period.
+</br></br>
+Please come to room 131 if you have any questions.</p>
+<p id="para"><img src="BHS_replicate_images/NFLJerseys.jpg" id="jersey"> &nbsp;<b>Spirit Week</b>
+</br></br></br></br>
+Jersey (Sports) Day</p>
+<p id="para"><img src="BHS_replicate_images/cheerleader.gif" id="pep"> &nbsp;Pep Rally
+</br></br></br></br></br>
+3:30 PM</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;
+<a href="">View Monthly Calendar</a>
+</div>
+<div id="links">
+<b>Quick Links</b>
+</br></br>
+<a href="">Bayside High School Dress Code</a>
+<hr>
+Please sign up to be placed on the <b>Parent Coordinator’s email distribution list</b>. The form can be found <a href="">here</a>.
+<hr>
+<a href="" style="color:black">MOUSE Squad Tech Support Request</a>
+<hr>
+<a href="">General Response Protocol / Emergency Drill</a> - letter from Mr. Athy
+<hr>
+<img src="BHS_replicate_images/ico_urgent_triangle.gif">&nbsp;<a href="">Letter to all students</a> concerning 1st and 2nd period lateness
+<hr>
+<img src="BHS_replicate_images/psalleft.gif" id="psal"><a href="">PSAL (Public School Athletic League)</a> - sports calendar for all Bayside High School teams
+<hr>
+<img src="BHS_replicate_images/clipart_music_clefs_045.gif" id="music"><b>Bayside High School Choir at Carnegie Hall</b></br>
+Review in The <a href="">New York Times</a></br>
+<a href="">Promo Video</a> of performance</br>
+<a href="">Radio interview</a> with Mr. Piccirillo
+<hr>
+<img src="BHS_replicate_images/graduation-cap-clip-art-20.jpg" id="alumni"><b>Bayside High School <a href="">Alumni</a> Site</b> -
+this site has no association with the school or the school district</br></br>
+<hr>
+<img src="BHS_replicate_images/ico_urgent_triangle.gif">&nbsp;Seasonal Flu - <a href="">a guide for parents</a>
+<hr>
+<a href="">NYC Department of Education</a>
+</div>
+<div id="publication">
+<span>Bayside Publications</span></br></br>
 
-		<p><b>eChalk Update</b> - All student accounts have been created and all classes have been uploaded. Students: your user name is your firstname.lastname and your password is your 9 digit OSIS#. If you have any questions, please email <a href="">smiller@baysidehighschool.org</a></p>
+Check out <b>The Baysider: Community Edition</b> - our newest publication!
+<img src="BHS_replicate_images/baysider.gif" id="newsTitle"></br></br></br></br>
+<hr>
+<img src="BHS_replicate_images/Front-Back-Cover-2014-1.gif" id="magazine"><a href="">Soundings 2014</a><br>
+BHS Literary Magazine - If you would like to purchase a copy, please see Ms. Ormaechea in room 131.
+<hr>
+View The Baysider (our school newspaper)
+Link to <a href="">The Baysider Blog</a></br>
+<img src="BHS_replicate_images/newspaper_bw.png" id="newspaper2"></br>
+<a href="">May 2014</a></br>
+<a href="">April 2014</a></br>
+<a href="">February 2014</a></br>
+<a href="">December 2013</a></br>
+<a href="">November 2013</a>
+</div>
+<div id="weather">
+<b>Weather</b></br></br>
+	
+Today, 9/29/2014</br>
+<span id="hot">High: 75</span> <span id="cold">Low: 66</span></br>
+Slight chance rain</br>
+23% chance of precipitation.</br></br>
 
-		<p><b>Pupil Path Update</b> - Incoming students will receive a letter containing their pupil path user names and passwords during their guidance counselor appointment. Parent information (user names and passwords) are also on this letter.</p>
-		<hr>
-		<p><img src="BHS_replicate_images/newspaper.png" id="newspaper">The 1st meeting for our school newspaper (The Baysider) will be on September 23rd, during period 11, in room B6. We are looking for writers, photographers, and artists. All are welcome!</p>
-		<hr>
-		<b><u><i>WELCOME BACK!  FALL 2014 INFORMATION</i></u></b></br>
-		
-		Please visit <a href="">www.pupilpath.com</a> for Summer Course & Regents grades, listed under 2013-2014, Term 7.</br></br>
-
-		Please download a copy of our <a href="">new bell schedule for the 2014-15 school year!</a>
-		<hr>
-		<p><img src="BHS_replicate_images/beaker.gif" id="beaker"><a href="">AP Chemistry Summer Assignment</a> - due the first day of school</p></br></br></br></br></br>
-		<hr>
-		<span style="font-size:24px"><b>PROSPECTIVE STUDENTS</b></span></br>
-
-		There will be 2 open house dates in the fall for the 2015-2016 school year:</br></br>
-
-		Tuesday, October 21, 2014</br>
-		
-		Auditorium doors will open at 6:30 pm and Information Session will begin promptly at 7 pm</br>
-
-		Thursday, November 6, 2014</br>
-
-		Auditorium doors will open at 6:30 pm and Information Session will begin promptly at 7 pm
-		<p>Specialized programs:</br>
-		
-		Q12A - <a href="">Digital Art & Design</a></br>
-		12B - <a href="">Music: Performance & Production</a></br>
-		Q12C - <a href="">Environmental Engineering & Technology</a></br>
-		Q12D - <a href="">Humanities & Non-Profit Management</a></br>
-		Q12E - <a href="">Computer Programming & Web Design</a></br>
-		Q12G - <a href="">Sports Medicine & Management</a></br>
-		</p>
-
-		<h4><a href="">FAQs for Students applying for 2015-2016 school year</a></h4>
-
-		Audition Information 2014-2015</br>
-
-		Attention current 7th Graders:</br>
-
-		As you begin your high school search process, here are some important dates to remember for the Bayside High School Digital Art & Music: Performance & Production Auditions - 
-		<ul>
-			<li>Sunday, November 2, 2014 - 9:30 AM</li>
-			<li>Saturday, November 15, 2014 - 2:00 PM</li>
-			<li>Sunday, November 16, 2014 - 9:30 AM</li>
-			<li>Saturday, January 10, 2015 - 9:30 AM</li>
-		</ul>
-		Plan on arriving 1/2 hour before the scheduled audition time.</br>
-
-		You do not need a ticket or an appointment.</br>
-		<hr>
-		PTA SAT Prep Course for Fall 2014</br>
-		
-		<a href="">Monday/Wednesday Classes</a> after 9th Period start September 22, 2014</br>
-		
-		<a href="">Saturday Morning Classes</a> start September 20, 2014
-	</div>
-
-	<div id="SocialLinks">
-		<p><img src="BHS_replicate_images/facebook_twitter_logo.jpg" id="FBTW">
-		LIKE us on <a href="" id="web">Facebook</a>    
-		FOLLOW us on <a href="" id="web">Twitter</a></p>
-
-		&nbsp;<b>Instructions for logging into:</b></br>
-		&nbsp;<a href="" id="web">E-Chalk</a> <span>(log in above)</span></br>
-		&nbsp;<a href="" id="web">Pupil Path</a> <a href="" id="web">(pupilpath.com)</a></br>
-		&nbsp;* In <a href="" id="idioma">Korean</a></br>
-		&nbsp;* In <a href="" id="idioma">Chinese</a></br>
-		&nbsp;* In <a href="" id="idioma">Spanish</a>
-	</div>
-
-	<div id="Events">
-		<b>Upcoming Events</b></br></br>
-
-		<span> >> </span> <b>Monday, September 29</b>
-		
-		<p id="para"><img src="BHS_replicate_images/pajamas-clipart-8.jpg" id="pjs"> &nbsp; <b>Spirit Week</b>
-		</br></br></br></br></br></br></br></br>
-		Comfy Cozy Day</p>
-		
-		<p id="para"><b>SUNY Maritime college visit</b></br>
-		On M 9/29, SUNY Maritime will be visiting during period 7 in the Auditorium Balcony. Please stop by room 131 the day before to pick up a pass. Passes WILL NOT be distributed the day of the college visit. They will be collected at the door, and no one may enter without one. Your teacher's signature must be on the pass in order for you to be excused for that period.
-		</br></br>
-		Please come to room 131 if you have any questions.</p>
-
-		<span> >> </span> <b>Tuesday, September 30</b>
-		
-		<p id="para"><img src="BHS_replicate_images/twins.jpg" id="twin"> &nbsp;<b>Spirit Week</b>
-		</br></br></br></br></br></br>
-		Twin Day</p>
-		
-		<span> >> </span><b>Wednesday, October 1</b>
-		<p id="para"><img src="BHS_replicate_images/cartoon.jpg" id="c"> &nbsp;<b>Spirit Week</b>
-		</br></br></br></br>
-		Cartoon Day</p>
-
-		<span> >> </span> <b>Thursday, October 2</b>
-		<p id="para"><b>CUNY Baruch college visit</b>
-		On TH 10/2, CUNY Baruch will be visiting during period 4 in the Auditorium Balcony. Please stop by room 131 the day before to pick up a pass. Passes WILL NOT be distributed the day of the college visit. They will be collected at the door, and no one may enter without one. Your teacher's signature must be on the pass in order for you to be excused for that period.
-		</br></br>
-		Please come to room 131 if you have any questions.</p>
-
-		<p id="para"><img src="BHS_replicate_images/NFLJerseys.jpg" id="jersey"> &nbsp;<b>Spirit Week</b>
-		</br></br></br></br>
-		Jersey (Sports) Day</p>
-
-		<p id="para"><img src="BHS_replicate_images/cheerleader.gif" id="pep"> &nbsp;Pep Rally
-		</br></br></br></br></br>
-		3:30 PM</p>
-
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;
-		<a href="">View Monthly Calendar</a>
-	</div>
-
-	<div id="links">
-		<b>Quick Links</b>
-		</br></br>
-		<a href="">Bayside High School Dress Code</a>
-		<hr>
-		Please sign up to be placed on the <b>Parent Coordinator’s email distribution list</b>. The form can be found <a href="">here</a>.
-		<hr>
-		<a href="" style="color:black">MOUSE Squad Tech Support Request</a>
-		<hr>
-		<a href="">General Response Protocol / Emergency Drill</a> - letter from Mr. Athy
-		<hr>
-		<img src="BHS_replicate_images/ico_urgent_triangle.gif">&nbsp;<a href="">Letter to all students</a> concerning 1st and 2nd period lateness
-		<hr>
-		<img src="BHS_replicate_images/psalleft.gif" id="psal"><a href="">PSAL (Public School Athletic League)</a> - sports calendar for all Bayside High School teams
-		<hr>
-		<img src="BHS_replicate_images/clipart_music_clefs_045.gif" id="music"><b>Bayside High School Choir at Carnegie Hall</b></br>
-		Review in The <a href="">New York Times</a></br>
-		<a href="">Promo Video</a> of performance</br>
-		<a href="">Radio interview</a> with Mr. Piccirillo
-		<hr>
-		<img src="BHS_replicate_images/graduation-cap-clip-art-20.jpg" id="alumni"><b>Bayside High School <a href="">Alumni</a> Site</b> -
-		this site has no association with the school or the school district</br></br>
-		<hr>
-		<img src="BHS_replicate_images/ico_urgent_triangle.gif">&nbsp;Seasonal Flu - <a href="">a guide for parents</a>
-		<hr>
-		<a href="">NYC Department of Education</a>
-	</div>
-
-	<div id="publication">
-		Bayside Publications
-		Check out The Baysider: Community Edition - our newest publication!
-		Soundings 2014
-		BHS Literary Magazine - If you would like to purchase a copy, please see Ms. Ormaechea in room 131.
-		View The Baysider (our school newspaper)
-		Link to The Baysider Blog
-
-		May 2014
-		April 2014
-		February 2014
-		December 2013
-		November 2013
-	</div>
-
-	<div id="weather"></div>
+Tomorrow, 9/30/2014</br>
+<span id="hot">High: 70</span> <span id="cold">Low: 61</span></br>
+Rain showers</br>
+48% chance of precipitation.</br>
 
 </div>
-
-
-
+</div>
 <!-- footer -->
-
-
 <div id="footer">
-
-	<div id="address">
-	Bayside High School, 3224 Corporal Kennedy Street, Bayside, NY 11361-1061</br>
-	Phone: (718) 229-7600  |  Fax: (718) 423-9566</br>
-	<a href="">Locate School</a>
-	</div>
-
-	<div id="companyLinks">
-	<a href="">Contact Us</a> | <a href="">User Policy</a> &nbsp;<a href=""><img src="BHS_replicate_images/facebook_share_icon.gif"></a>&nbsp;&nbsp;
-	<a href=""><img src="BHS_replicate_images/twitter_share_icon.gif"></a>
-	</div>
-
-	<div id="companyLogo">
-		<img src="BHS_replicate_images/Logo.png">
-	</div>
-
-	<div id="Language">
-		<select>
-			<option value="Select Language">Select Language</option>
-		</select>
-	</div>
+<div id="address">
+Bayside High School, 3224 Corporal Kennedy Street, Bayside, NY 11361-1061</br>
+Phone: (718) 229-7600 | Fax: (718) 423-9566</br>
+<a href="">Locate School</a>
 </div>
-
-
+<div id="companyLinks">
+<a href="">Contact Us</a> | <a href="">User Policy</a> &nbsp;<a href=""><img src="BHS_replicate_images/facebook_share_icon.gif"></a>&nbsp;&nbsp;
+<a href=""><img src="BHS_replicate_images/twitter_share_icon.gif"></a>
+</div>
+<div id="companyLogo">
+<img src="BHS_replicate_images/Logo.png">
+</div>
+<div id="Language">
+<select>
+<option value="Select Language">Select Language</option>
+</select>
+</div>
+</div>
 </body>
-
 </html>
